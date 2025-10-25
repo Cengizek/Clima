@@ -11,6 +11,9 @@ struct WeatherModel{
     let cityName : String
     let temperature : Double
     
+    var cityNameCapitalized : String{
+        return cityName.capitalized
+    }
     
     var temperatureString : String{
         return String(format: "%.1f", temperature)
